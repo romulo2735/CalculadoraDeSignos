@@ -6,7 +6,10 @@ namespace CalculadoraDeSignos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Signo signo = new Signo();
+            signo.nome = "Libra";
+
+            Console.WriteLine("Seu signo é: "+signo.nome);
             Console.ReadLine();
         }
     }

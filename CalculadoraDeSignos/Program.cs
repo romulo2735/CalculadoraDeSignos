@@ -6,8 +6,8 @@ namespace CalculadoraDeSignos
     {
         static void Main(string[] args)
         {
-            String dia;
-            String mes;
+            string dia;
+            string mes;
 
             Console.WriteLine("Dia de nascimento: ");
             dia = Console.ReadLine();
@@ -20,8 +20,8 @@ namespace CalculadoraDeSignos
 
             try
             {
-              diaInt = Convert.ToInt32(diaInt);
-              mesInt = Convert.ToInt32(mesInt);
+              diaInt = Convert.ToInt32(dia);
+              mesInt = Convert.ToInt32(mes);
             }
             catch (FormatException e)
             {
@@ -35,7 +35,8 @@ namespace CalculadoraDeSignos
 
             if (signo != null)
             {
-              Console.WriteLine("Seu Signo é: "+signo.nome+" "+signo.caracteristicas);
+              Console.WriteLine("Seu Signo é: "+signo.nome);
+              Console.WriteLine("Caracteristicas: "+ signo.caracteristicas);
             } else
             {
               Console.WriteLine("Não foi possivel interpretar seu signo!");

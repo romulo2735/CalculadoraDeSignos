@@ -12,7 +12,7 @@ namespace CalculadoraDeSignos
             Console.WriteLine("Dia de nascimento: ");
             dia = Console.ReadLine();
 
-            Console.WriteLine("Mẽs do nascimento: ");
+            Console.WriteLine("Mes do nascimento: ");
             mes = Console.ReadLine();
 
             int diaInt = 0;
@@ -30,8 +30,8 @@ namespace CalculadoraDeSignos
               Environment.Exit(1);
             }
 
-            InterpreatadorSigno interpreatador = new InterpreatadorSigno();
-            Signo signo = interpreatador.interpretar(diaInt, mesInt);
+            InterpretadorSigno interpretador = new InterpretadorSigno();
+            Signo signo = interpretador.interpretar(diaInt, mesInt);
 
             if (signo != null)
             {

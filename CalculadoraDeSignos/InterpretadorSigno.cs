@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CalculadoraDeSignos
 {
-  class InterpreatadorSigno
+  class InterpretadorSigno
   {
     public Signo[] signos = new Signo[12];
     public InterpretadorSigno()
@@ -124,7 +124,7 @@ namespace CalculadoraDeSignos
 
       for (int i = 0; i < signos.Length; i++)
       {
-        if ((signos[i].mesInicio == mes && dia >= signos[i].diaInicio) || (signo[i].mesFim == mes && dia <= signos[i].diaFim))
+        if ((signos[i].mesInicio == mes && dia >= signos[i].diaInicio) || (signos[i].mesFim == mes && dia <= signos[i].diaFim))
         {
           signo = signos[i];
           break;
